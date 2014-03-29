@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webcamviewer</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div style="margin: 0 40%">
+  <b><%=link_to "webcam1", webcam1_path%></b>
+  |
+  <b><%=link_to "webcam2", webcam2_path%></b>
+</div>
+<%= yield %>
+
+</body>
+</html>
